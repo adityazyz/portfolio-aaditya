@@ -10,6 +10,7 @@ const VideoBackground = ({video,content} : {
         autoPlay
         loop
         muted
+        playsInline  // Add playsInline attribute
         className="absolute inset-0 h-full w-full object-cover z-10"
       >
         <source src={video} type="video/mp4" />
