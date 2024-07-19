@@ -117,7 +117,7 @@ export const GlareCard = ({
         }
       }}
     >
-      <div className="h-fit sm:h-full  pb-6  sm:pb-0 mx-0 sm:mx-2  grid will-change-transform origin-center transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] [transform:rotateY(var(--r-x))_rotateX(var(--r-y))] rounded-[var(--radius)] sm:rounded-[40px] border border-gray-900 hover:[--opacity:0.6] hover:[--duration:200ms] hover:[--easing:linear] hover:filter-none overflow-hidden   ">
+      <div className="h-fit sm:h-full  pb-6  sm:pb-0 mx-0 sm:mx-2  grid will-change-transform origin-center transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] [transform:rotateY(var(--r-x))_rotateX(var(--r-y))] rounded-[var(--radius)] sm:rounded-[40px] border border-black hover:[--opacity:0.6] hover:[--duration:200ms] hover:[--easing:linear] hover:filter-none overflow-hidden   ">
         <div className="w-full h-full grid gap-4 [grid-area:1/1] mix-blend-soft-light [clip-path:inset(0_0_0_0_round_var(--radius))] ">
           <div className={cn("h-fit sm:h-full pb-6 sm:pb-0  w-full bg-white  ", className)}>
             {children}
