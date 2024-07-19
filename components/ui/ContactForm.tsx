@@ -30,10 +30,15 @@ function ContactForm() {
     const responseData = await response.json();
     if (response.ok) {
       // handle success
-      toast.success("Message sent successfully");
+      if(responseData.success === true){
+        toast.success("Message sent successfully.");
+      }else{
+        toast.error("Some error occured.")
+      }
+      
     } else {
       // handle error
-      console.error("Failed to send message");
+      toast.error("Failed to send message");
       return;
     }
 
