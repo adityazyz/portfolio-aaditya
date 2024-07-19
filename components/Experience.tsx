@@ -62,23 +62,25 @@ function Experience() {
           My Experience
         </motion.div>
         <motion.div
-          initial={{
-            opacity: 0,
-            x: 50,
-          }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-          }}
-          transition={{
-            duration: 2.5,
-          }}
+          // initial={{
+          //   opacity: 0,
+          //   x: 50,
+          // }}
+          // whileInView={{
+          //   opacity: 1,
+          //   x: 0,
+          // }}
+          // transition={{
+          //   duration: 2.5,
+          // }}
           // viewport={{ once: true }}
           className="w-full px-4 md:px-16 text-center text-white font-light tracking-wide text-sm md:text-lg flex mb-10 sm:pb-24 justify-center mt-12 md:mt-24 "
         >
           {descriptionTop}
         </motion.div>
-        <div className="flex justify-center px-5">
+        <div className="flex justify-center px-5"
+        id="issuediv"
+        >
           <div
             
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 gap-y-0 md:gap-8 mt-5 mx-auto"
