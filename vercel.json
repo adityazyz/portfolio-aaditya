@@ -1,9 +1,7 @@
 {
     "functions": {
-      "api/short-task.js": {
-        "maxDuration": 5 
-      },
-      "api/long-task.js": {
+    
+      "api/SaveClientData.js": {
         "maxDuration": 60 
       },
       "api/*": {
