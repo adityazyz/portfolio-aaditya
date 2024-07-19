@@ -21,7 +21,7 @@ export async function POST(req: Request) {
         // Now TypeScript knows data is of type TFormSchema
         const {FirstName, LastName, Email, Phone, Message} = body;
         await client.sql`CREATE TABLE IF NOT EXISTS ClientData ( FirstName varchar(255), LastName varchar(255), Email varchar(255), Phone varchar(255), Message varchar(255) );`;
-      await client.sql`INSERT INTO Pets (FirstName, LastName, Email, Phone, Message) VALUES (${FirstName}, ${LastName} , ${Email}, ${Phone}, ${Message});`;
+      await client.sql`INSERT INTO ClientData (FirstName, LastName, Email, Phone, Message) VALUES (${FirstName}, ${LastName} , ${Email}, ${Phone}, ${Message});`
       }else{
         return NextResponse.json({ success: false });
       }
