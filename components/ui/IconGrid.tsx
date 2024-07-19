@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion";
 
 interface myItems  {
         name : string
@@ -10,11 +11,23 @@ function IconGrid({items} : {items : myItems[]} ) {
   return (
     <>
     <section className="py-base container px-6 flex justify-center">
-    <div className="grid gap-8 grid-cols-3 md:gap-y-16 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-5">
+    <motion.div
+    initial={{
+      opacity: 0,
+    }}
+    whileInView={{
+      opacity: 1,
+    }}
+    transition={{
+      duration: 3,
+    }}
+    viewport={{ once: true }}
+    className="grid gap-8 grid-cols-3 md:gap-y-16 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-5">
 
     {items.map((item : myItems): React.ReactNode=>{
         return <blockquote key={item.name} className='bg-slate-100 py-3 px-3 rounded-lg w-[80px] h-[85px] hover:scale-110 transition-all duration-200 ease-in-out'>
         <div
+        
           id="my-icon"
           aria-hidden="true"
           className="user-select-none  font-bold -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]  flex items-center justify-center"
@@ -35,7 +48,7 @@ function IconGrid({items} : {items : myItems[]} ) {
       </blockquote>
     })}
 
-    </div>
+    </motion.div>
 </section>
     </>
   )

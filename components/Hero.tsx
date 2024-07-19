@@ -1,16 +1,18 @@
 "use client";
 import React from "react";
-import { BackgroundGradientAnimation } from "./ui/BgGradientAnimation";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
-import { IoMdArrowDropdownCircle } from "react-icons/io";
+import { AiFillThunderbolt } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 
 import { TypewriterEffectSmooth } from "./ui/TypewriterEffect";
 
 import { motion } from "framer-motion";
 import { AuroraBackground } from "./ui/AuroraBackground";
+
+import { downloadFile } from '../utils/DownloadFile';
+import { HiDocumentDownload } from "react-icons/hi";
 
 interface MyComponentProps {
   handleAboutScroll: () => void;
@@ -23,7 +25,10 @@ interface SocialData {
   link: string;
 }
 
+const resumeFileName = "AadityaDagar-RESUME.pdf";
+
 function Hero({ handleAboutScroll, handleContactScroll }: MyComponentProps) {
+
   const iconClass =
     "h-6 w-6 md:h-7 md:w-7 ml-5 text-gray-200 hover:text-white hover:scale-110 transition-all duration-200 ease-in-out";
 
@@ -95,7 +100,7 @@ function Hero({ handleAboutScroll, handleContactScroll }: MyComponentProps) {
             <div className="bg-clip-text text-3xl md:text-6xl text-transparent drop-shadow-2xl bg-gradient-to-b from-white/100 to-white/40">
               <TypewriterEffectSmooth words={words} />
             </div>
-            <p className="text-sm md:text-lg tracking-wide font-light text-purple-300 mb-3 ">
+            <p className="text-sm md:text-lg tracking-wide font-light text-purple-200 mb-3 ">
               WELCOME TO MY PORTFOLIO
             </p>
 
@@ -104,13 +109,25 @@ function Hero({ handleAboutScroll, handleContactScroll }: MyComponentProps) {
               Let's build something amazing together!
             </p>
 
+            <div className="flex justify-center items-center flex-col sm:flex-row">
             <button
-              className=" text-sm bg-white rounded-full w-fit px-5  hover:scale-110 transition-all duration-300 ease-in-out py-2 mt-16 sm:mt-10 font-normal text-black flex items-center justify-center z-50 pointer-events-auto"
+              className=" text-sm bg-transparent text-white rounded-full px-5  hover:scale-110 transition-all duration-300 ease-in-out py-2 mt-16 sm:mt-10 font-normal border border-white w-52 flex items-center justify-center z-50 pointer-events-auto"
+              onClick={()=>{
+                downloadFile(resumeFileName);
+              }}
+            >
+              Download Resume
+              <HiDocumentDownload className="h-7 text-white w-7 ml-2" />
+            </button>
+
+            <button
+              className=" text-sm bg-white sm:ml-5 rounded-full w-52 px-5  hover:scale-110 transition-all duration-300 ease-in-out py-2 mt-6 sm:mt-10 font-normal text-black flex items-center justify-center z-50 pointer-events-auto"
               onClick={handleAboutScroll}
             >
               Explore portfolio
-              <IoMdArrowDropdownCircle className="h-7 w-7 ml-2" />
+              <AiFillThunderbolt className="h-7 text-gray-700 w-7 ml-2" />
             </button>
+            </div>
 
             {/* // button  */}
           </div>

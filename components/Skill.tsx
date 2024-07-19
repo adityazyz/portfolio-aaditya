@@ -129,14 +129,14 @@ function InfiniteMovingCardsDemo() {
       <motion.div
         initial={{
           opacity: 0,
-          x: 10,
+          y: 20,
         }}
         whileInView={{
           opacity: 1,
-          x: 0,
+          y: 0,
         }}
         transition={{
-          duration: 1.5,
+          duration: 2,
         }}
         viewport={{ once: true }}
         className="w-full px-4 md:px-16 text-left text-white font-light tracking-wide text-sm md:text-lg   flex mb-12 lg:mb-16 justify-center mt-12 md:mt-12  "
