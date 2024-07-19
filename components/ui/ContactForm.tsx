@@ -80,8 +80,8 @@ function ContactForm() {
   };
 
   return (
-    <div className="z-40 px-4 py-2 md:py-10 sm:px-6 lg:px-8  lg:py-14 lg:pb-0 mx-auto">
-      <div className="  mx-auto pl-0 lg:pl-20 xl:pl-28">
+    <div className="z-40  md:py-10  lg:py-14 lg:pb-0 ">
+      <div className=" lg:pl-20 xl:pl-28">
         <motion.div
           initial={{
             opacity: 0,

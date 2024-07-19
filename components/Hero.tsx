@@ -75,7 +75,7 @@ function Hero({ handleAboutScroll, handleContactScroll }: MyComponentProps) {
           className="relative flex flex-col items-center justify-center "
         >
           {/* header  */}
-          <div className="flex justify-end px-6 py-8 z-50 text-white mt-8 sm:mt-0">
+          <div className="flex justify-end px-6 py-8 z-50 text-white mt-4 sm:mt-0">
             {socialData.map((item: SocialData): React.ReactNode => {
               return (
                 <Link key={item.name} href={item.link}>

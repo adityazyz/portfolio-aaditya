@@ -4,7 +4,7 @@ import ContactMe from "@/components/ContactMe";
 import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Skill from "@/components/Skill";
-import WhyWebsite from "@/components/WhyWebsite";
+import WhyWebsite from "@/components/WhyWebsite"; 
 import React, { useRef, LegacyRef } from "react";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Footer from "@/components/ui/Footer";
@@ -66,7 +66,7 @@ export default function Home() {
   ];
 
   return (
-    <main>
+    <main >
       <FloatingNav navItems={navItems} />
       <section ref={homeRef as LegacyRef<HTMLElement> | undefined}>
         <Hero

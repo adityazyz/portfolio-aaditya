@@ -35,7 +35,7 @@ export const GlareCard = ({
     "--duration": "300ms",
     "--foil-size": "100%",
     "--opacity": "0",
-    "--radius": "48px",
+    "--radius": "20px",
     "--easing": "ease",
     "--transition": "var(--duration) var(--easing)",
   } as any;
@@ -68,7 +68,7 @@ export const GlareCard = ({
     <div
 
       style={containerStyle}
-      className="relative  isolate [contain:layout_style] [perspective:600px] transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] will-change-transform w-[320px] [aspect-ratio:17/21]"
+      className="relative  isolate [contain:layout_style] [perspective:600px] transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] will-change-transform w-[250px] md:w-[320px] [aspect-ratio:17/21]"
       ref={refElement}
       onPointerMove={(event) => {
         const rotateFactor = 0.4;
@@ -117,7 +117,7 @@ export const GlareCard = ({
         }
       }}
     >
-      <div className="h-fit sm:h-full pb-6 my-0 sm:pb-0 mx-0 sm:mx-2  grid will-change-transform origin-center transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] [transform:rotateY(var(--r-x))_rotateX(var(--r-y))] rounded-[var(--radius)] border border-gray-900 hover:[--opacity:0.6] hover:[--duration:200ms] hover:[--easing:linear] hover:filter-none overflow-hidden   ">
+      <div className="h-fit sm:h-full  pb-6  sm:pb-0 mx-0 sm:mx-2  grid will-change-transform origin-center transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] [transform:rotateY(var(--r-x))_rotateX(var(--r-y))] rounded-[var(--radius)] sm:rounded-[40px] border border-gray-900 hover:[--opacity:0.6] hover:[--duration:200ms] hover:[--easing:linear] hover:filter-none overflow-hidden   ">
         <div className="w-full h-full grid gap-4 [grid-area:1/1] mix-blend-soft-light [clip-path:inset(0_0_0_0_round_var(--radius))] ">
           <div className={cn("h-fit sm:h-full pb-6 sm:pb-0  w-full bg-white  ", className)}>
             {children}

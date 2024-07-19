@@ -13,11 +13,11 @@ interface IconData {
 const pcItems1: IconData[] = [
   {
     image: "/html-logo.svg",
-    name: "Html 5",
+    name: "Html5",
   },
   {
     image: "/css.svg",
-    name: "Css 3",
+    name: "Css3",
   },
 
   {
@@ -35,7 +35,7 @@ const pcItems1: IconData[] = [
 
   {
     image: "/react-logo.svg",
-    name: "React.js",
+    name: "React",
   },
   {
     image: "/redux-logo.svg",
@@ -52,14 +52,14 @@ const pcItems1: IconData[] = [
   },
   {
     image: "/express-logo.svg",
-    name: "Express.js",
+    name: "Express",
   },
 ];
 
 const pcItems2 = [
   {
     image: "/framer-logo.png",
-    name: "Framer Motion",
+    name: "Framer",
   },
   {
     image: "/bootstrap-logo.svg",
@@ -67,7 +67,7 @@ const pcItems2 = [
   },
   {
     image: "/tailwind-logo.svg",
-    name: "Tailwind css",
+    name: "Tailwind",
   },
 
   {
@@ -76,11 +76,11 @@ const pcItems2 = [
   },
   {
     image: "/mongo-logo.svg",
-    name: "Mongo DB",
+    name: "MongoDB",
   },
   {
     image: "/graphql-logo.svg",
-    name: "Graph QL",
+    name: "GraphQL",
   },
   {
     image: "/sql-logo.svg",
@@ -96,7 +96,7 @@ const pcItems2 = [
   },
   {
     image: "/adobexd-logo.svg",
-    name: "Adobe XD",
+    name: "XD",
   },
   {
     image: "/figma-logo.svg",
@@ -108,9 +108,9 @@ function InfiniteMovingCardsDemo() {
   const background = "bg-[#0a101a]";
   const description = `I specialize in crafting responsive, visually engaging web experiences using HTML, CSS, and JavaScript. My advanced proficiency extends to frameworks like React, Next.js, and GraphQL for efficient data fetching. With strong backend skills in Node.js and Firebase, I manage databases such as MongoDB and SQL. Additionally, I excel in version control with Git, containerization using Docker, and have adept UI/UX design skills with Adobe XD and Figma.`;
   return (
-    <div className="bg-[#0a101a]  w-full h-fit pt-24 md:pt-36 pb-16 sm:pb-0 ">
+    <div className="bg-[#0a101a]  w-full h-fit pt-16 sm:pt-24 md:pt-36 pb-10 sm:pb-0 ">
       <motion.div
-        className="w-full bg-gradient-to-r from-pink-300 to-indigo-600 bg-clip-text text-transparent font-semibold tracking-wide text-3xl sm:text-5xl md:text-6xl flex mb-0 md:mb-20 py-2 justify-center px-6 "
+        className="w-full px-4 md:px-16 bg-gradient-to-r from-pink-300 to-indigo-600 bg-clip-text text-transparent font-semibold tracking-wide text-3xl sm:text-5xl md:text-6xl flex mb-0 md:mb-20 py-2 justify-center  "
         initial={{
           opacity: 0,
           y: 40,
@@ -139,7 +139,7 @@ function InfiniteMovingCardsDemo() {
           duration: 1.5,
         }}
         viewport={{ once: true }}
-        className="w-full text-center text-white font-light tracking-wide text-sm md:text-lg   flex mb-12 lg:mb-16 justify-center mt-12 px-10 md:mt-12  md:px-16"
+        className="w-full px-4 md:px-16 text-left text-white font-light tracking-wide text-sm md:text-lg   flex mb-12 lg:mb-16 justify-center mt-12 md:mt-12  "
       >
         {description}
       </motion.div>

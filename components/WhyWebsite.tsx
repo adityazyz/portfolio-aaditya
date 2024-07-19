@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function WhyWebsite() {
   const content = (
-    <div className="relative z-10 flex flex-col items-center justify-center h-fit px-6 md:px-32 text-center py-16 md:py-28">
+    <div className="relative px-4 md:px-16 z-10 flex flex-col items-center justify-center h-fit  text-center py-16 md:py-28">
       <motion.div
         initial={{
           opacity: 0,
