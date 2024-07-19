@@ -14,10 +14,12 @@ export async function POST(req: Request) {
       zodErrors = { ...zodErrors, [issue.path[0]]: issue.message };
     });
     
-  } else {
-    await dbConnect();
-    await ClientData.create(body);
-  }
+  } 
+  
+  // else {
+  //   await dbConnect();
+  //   await ClientData.create(body);
+  // }
 
   return NextResponse.json(
     Object.keys(zodErrors).length > 0
