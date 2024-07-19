@@ -1,9 +1,9 @@
 {
     "functions": {
-      "/api/SaveClientData/route.ts": {
+      "api/SaveClientData/route.ts": {
         "maxDuration": 60 
       },
-      "/api/*/route.ts": {
+      "api/*/route.ts": {
         "maxDuration": 10 
       }
     }

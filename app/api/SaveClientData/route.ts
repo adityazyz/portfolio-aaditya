@@ -13,9 +13,10 @@ export async function POST(req: Request) {
     result.error.issues.forEach((issue) => {
       zodErrors = { ...zodErrors, [issue.path[0]]: issue.message };
     });
+    
   } else {
     await dbConnect();
-    const post = await ClientData.create(body);
+    await ClientData.create(body);
   }
 
   return NextResponse.json(
