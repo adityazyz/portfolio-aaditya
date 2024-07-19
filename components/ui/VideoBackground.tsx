@@ -11,7 +11,7 @@ const VideoBackground = ({video,content} : {
         loop
         muted
         playsInline  // Add playsInline attribute
-        className="absolute inset-0 h-full w-full object-cover z-10"
+        className="absolute inset-0 h-full w-full object-cover z-10" 
       >
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.

@@ -1,0 +1,14 @@
+{
+    "functions": {
+      "api/short-task.js": {
+        "maxDuration": 5 
+      },
+      "api/long-task.js": {
+        "maxDuration": 60 
+      },
+      "api/*": {
+        "maxDuration": 10 
+      }
+    }
+  }
+  
