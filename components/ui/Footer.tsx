@@ -58,7 +58,7 @@ function Footer({ NavItems }: { NavItems: INavItems[] }) {
                   navItem.func();
                 }}
               >
-                <span>{navItem.name}</span>
+                <span className=" underline">{navItem.name}</span>
               </button>
             );
           }

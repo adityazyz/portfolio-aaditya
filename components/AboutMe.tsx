@@ -35,7 +35,7 @@ function AboutMe() {
               x: 0,
             }}
             transition={{ duration: 1.5 }}
-            viewport={{ once: true }}
+            // viewport={{ once: true }}
     
             className=" w-full md:w-2/3 flex flex-col justify-start gap-4 text-gray-800 md:mt-0 sm:mt-8 xs:mt-4 text-center md:text-left  md:px-0 ml-0 sm:ml-5"
           >

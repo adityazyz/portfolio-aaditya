@@ -62,18 +62,17 @@ function Experience() {
           My Experience
         </motion.div>
         <motion.div
-          // initial={{
-          //   opacity: 0,
-          //   x: 50,
-          // }}
-          // whileInView={{
-          //   opacity: 1,
-          //   x: 0,
-          // }}
-          // transition={{
-          //   duration: 2.5,
-          // }}
-          // viewport={{ once: true }}
+          initial={{
+            opacity: 0,
+            x: -40,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          transition={{
+            duration: 2.5,
+          }}
           className="w-full px-4 md:px-16 text-center text-white font-light tracking-wide text-sm md:text-lg flex mb-10 sm:pb-24 justify-center mt-12 md:mt-24 "
         >
           {descriptionTop}
@@ -106,7 +105,7 @@ function Experience() {
                       <h3 className="text-lg sm:text-xl font-bold text-gray-900 mt-4 px-4">
                         {item.title}
                       </h3>
-                      <p className="text-gray-600 hidden sm:block text-sm mt-2 px-4">
+                      <p className="text-gray-600 sm:mb-4 md:mb-0 hidden sm:block text-sm mt-2 px-4">
                         {item.description}
                       </p>
                       <p className="text-gray-600 sm:hidden text-sm mt-2 px-4">
@@ -122,12 +121,14 @@ function Experience() {
         <motion.div
           initial={{
             opacity: 0,
+            y:40
           }}
           whileInView={{
             opacity: 1,
+            y:0
           }}
           transition={{
-            duration: 3,
+            duration: 2,
           }}
           className="w-full px-4 md:px-16 text-center text-white font-light tracking-wide  text-sm md:text-lg flex mb-16 justify-center mt-4 md:mt-20 "
         >

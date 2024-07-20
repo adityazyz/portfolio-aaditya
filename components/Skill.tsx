@@ -105,12 +105,11 @@ const pcItems2 = [
 ];
 
 function InfiniteMovingCardsDemo() {
-  const background = "bg-[#0a101a]";
   const description = `I specialize in crafting responsive, visually engaging web experiences using HTML, CSS, and JavaScript. My advanced proficiency extends to frameworks like React, Next.js, and GraphQL for efficient data fetching. With strong backend skills in Node.js and Firebase, I manage databases such as MongoDB and SQL. Additionally, I excel in version control with Git, containerization using Docker, and have adept UI/UX design skills with Adobe XD and Figma.`;
   return (
-    <div className="bg-[#0a101a]  w-full h-fit pt-16 sm:pt-24 md:pt-36 pb-10 sm:pb-0 ">
+    <div className="bg-[#0a101a]  w-full h-fit pt-16 sm:pt-24 md:pt-36 pb-10 sm:pb-20 ">
       <motion.div
-        className="w-full px-4 md:px-16 bg-gradient-to-r from-pink-300 to-indigo-600 bg-clip-text text-transparent font-semibold tracking-wide text-3xl sm:text-5xl md:text-6xl flex mb-0 md:mb-20 py-2 justify-center  "
+        className="w-full px-4 md:px-16 bg-gradient-to-r from-pink-300 to-indigo-600 bg-clip-text text-transparent font-semibold tracking-wide text-3xl sm:text-5xl md:text-6xl flex mb-0 sm:mb-20 md:mb-24 py-2 justify-center  "
         initial={{
           opacity: 0,
           y: 40,
@@ -129,17 +128,17 @@ function InfiniteMovingCardsDemo() {
       <motion.div
         initial={{
           opacity: 0,
-          y: 20,
+          x: 30,
         }}
         whileInView={{
           opacity: 1,
-          y: 0,
+          x: 0,
         }}
         transition={{
           duration: 2,
         }}
         viewport={{ once: true }}
-        className="w-full px-4 md:px-16 text-left text-white font-light tracking-wide text-sm md:text-lg   flex mb-12 lg:mb-16 justify-center mt-12 md:mt-12  "
+        className="w-full px-4 md:px-16 text-left text-white font-light tracking-wide text-sm md:text-lg   flex mb-12 md:mb-20 justify-center mt-12 md:mt-12  "
       >
         {description}
       </motion.div>
