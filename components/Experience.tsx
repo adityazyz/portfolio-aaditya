@@ -64,11 +64,11 @@ function Experience() {
         <motion.div
           initial={{
             opacity: 0,
-            x: -40,
+            y: 30,
           }}
           whileInView={{
             opacity: 1,
-            x: 0,
+            y: 0,
           }}
           transition={{
             duration: 2.5,
