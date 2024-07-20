@@ -21,7 +21,7 @@ function IconGrid({items} : {items : myItems[]} ) {
       opacity: 1}}
 
       transition={{
-        duration: 2,
+        duration: 1.4,
         ease: "easeInOut",
       }}
     
