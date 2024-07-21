@@ -33,16 +33,19 @@ function Footer({ NavItems }: { NavItems: INavItems[] }) {
   ];
 
   return (
-    <motion.footer
-      className="footer h-fit bg-black bg-opacity-5 backdrop-blur pb-16 sm:pb-10 footer-center bg-base-200  text-base-content  px-10"
-      initial={{ opacity: 0.0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 2,
-        ease: "easeInOut",
-      }}
+    <footer
+      className="footer h-fit bg-black  pb-16 sm:pb-10 footer-center bg-base-200  text-base-content  px-10" 
+      
     >
-      <nav className="flex flex-row justify-center ">
+     <motion.div
+     initial={{ opacity: 0.0, y: 40 }}
+     whileInView={{ opacity: 1, y: 0 }}
+     transition={{
+       duration: 2,
+       ease: "easeInOut",
+     }}
+     >
+     <nav className="flex flex-row justify-center ">
         {NavItems.map((navItem: INavItems, idx: number) => {
           if (navItem.name === "Contact") {
             // avoiding contact link
@@ -76,11 +79,11 @@ function Footer({ NavItems }: { NavItems: INavItems[] }) {
         </div>
       
 
-        <div className="flex text-sm justify-center mb-4 sm:mb-3">
+        <div className="flex text-gray-100 text-sm justify-center mb-4 sm:mb-3">
         <p>Powered by Aaditya Dagar</p>
       </div>
 
-      <div className="flex text-sm justify-center items-center flex-col sm:flex-row">
+      <div className="flex text-gray-100  text-sm justify-center items-center flex-col sm:flex-row">
         <div className="flex  items-center mb-1 sm:mb-0 sm:mr-5 justify-center">
         <IoIosCall/>
         <p className="ml-2">{MobileNumber}</p>
@@ -91,12 +94,9 @@ function Footer({ NavItems }: { NavItems: INavItems[] }) {
         </div>
       </div>
 
-        
-        
+     </motion.div>
       
-      
-      
-    </motion.footer>
+    </footer>
   );
 }
 

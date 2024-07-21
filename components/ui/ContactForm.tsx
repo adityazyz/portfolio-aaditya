@@ -106,7 +106,7 @@ function ContactForm() {
         <div className="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
           {/* <!-- Card --> */}
           <div className="flex mb-8 md:mb-16  flex-col border border-1 border-gray-500 rounded-xl p-4 sm:p-6 lg:p-8 bg-black bg-opacity-10 backdrop-blur-lg mx-6 ">
-            <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-neutral-200">
+            <h2 className="mb-8 text-xl font-semibold text-neutral-200">
               Fill in the form
             </h2>
 
@@ -118,7 +118,7 @@ function ContactForm() {
                     <input
                       {...register("FirstName")}
                       type="text"
-                      className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                      className="py-3 px-4 block w-full  rounded-lg text-sm focus:border-blue-500  disabled:opacity-50 disabled:pointer-events-none bg-neutral-900 border-neutral-700 text-neutral-200 placeholder-neutral-500 focus:ring-neutral-600"
                       placeholder="First Name"
                     />
                     {errors.FirstName && (
@@ -132,7 +132,7 @@ function ContactForm() {
                     <input
                       {...register("LastName")}
                       type="text"
-                      className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                      className="py-3 px-4 block w-full  rounded-lg text-sm focus:border-blue-500  disabled:opacity-50 disabled:pointer-events-none bg-neutral-900 border-neutral-700 text-neutral-200 placeholder-neutral-500 focus:ring-neutral-600"
                       placeholder="Last Name"
                     />
                     {errors.LastName && (
@@ -149,7 +149,7 @@ function ContactForm() {
                     {...register("Email")}
                     type="email"
                     autoComplete="email"
-                    className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                    className="py-3 px-4 block w-full  rounded-lg text-sm focus:border-blue-500  disabled:opacity-50 disabled:pointer-events-none bg-neutral-900 border-neutral-700 text-neutral-200 placeholder-neutral-500 focus:ring-neutral-600"
                     placeholder="Email"
                   />
                   {errors.Email && (
@@ -163,7 +163,7 @@ function ContactForm() {
                   <input
                     {...register("Phone")}
                     type="text"
-                    className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                    className="py-3 px-4 block w-full  rounded-lg text-sm focus:border-blue-500  disabled:opacity-50 disabled:pointer-events-none bg-neutral-900 border-neutral-700 text-neutral-200 placeholder-neutral-500 focus:ring-neutral-600"
                     placeholder="Phone Number"
                   />
                   {errors.Phone && (
@@ -177,7 +177,7 @@ function ContactForm() {
                   <textarea
                     {...register("Message")}
                     rows={4}
-                    className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                    className="py-3 px-4 block w-full  rounded-lg text-sm focus:border-blue-500  disabled:opacity-50 disabled:pointer-events-none bg-neutral-900 border-neutral-700 text-neutral-200 placeholder-neutral-500 focus:ring-neutral-600"
                     placeholder="Message"
                   ></textarea>
                   {errors.Message && (
