@@ -80,7 +80,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="z-40  md:py-10  lg:py-14 lg:pb-0 ">
+    <div  className="z-40  md:py-10  lg:py-14 lg:pb-0 ">
       <div className=" lg:pl-20 xl:pl-28">
         <motion.div
           initial={{
@@ -101,7 +101,7 @@ function ContactForm() {
           <p className="md:mt-1 text-neutral-300">
             Have a project in mind? Get in touch and let's make it happen!
           </p>
-        </motion.div>
+        </motion.div> 
 
         <div className="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
           {/* <!-- Card --> */}
@@ -208,7 +208,7 @@ function ContactForm() {
           </div>
           {/* <!-- End Card --> */}
 
-          <div className="divide-y divide-gray-200 dark:divide-neutral-800">
+          <div className="divide-y divide-neutral-800">
             {/* <!-- Icon Block --> */}
 
             {/* <!-- End Icon Block --> */}

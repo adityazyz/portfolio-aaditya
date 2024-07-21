@@ -86,12 +86,12 @@ export default function Home() {
       <section>
         <WhyWebsite />
       </section>
-      <section ref={contactRef as LegacyRef<HTMLElement> | undefined}>
+      <section className="bg-black" ref={contactRef as LegacyRef<HTMLElement> | undefined}>
         <ContactMe />
       </section>
-      <section>
+      <div>
         <Footer NavItems={navItems} />
-      </section>
+      </div>
     </main>
   );
 }

@@ -5,7 +5,7 @@ import ContactForm from "./ui/ContactForm";
 function ContactMe() {
   const content = <ContactForm />;
   return (
-    <div className="py-[5vh] bg-black">
+    <div className=" pt-[6vh] sm:pt-[5vh] sm:py-[5vh] bg-black">
       <VideoBackground content={content} video={"new-normal-video.mp4"} backupImage="/new-normal-photo.png"/>
     </div>
   );

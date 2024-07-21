@@ -34,7 +34,7 @@ function Footer({ NavItems }: { NavItems: INavItems[] }) {
 
   return (
     <footer
-      className="footer h-fit bg-black  pb-16 sm:pb-10 footer-center bg-base-200  text-base-content  px-10" 
+      className="footer pt-2 sm:pt-0 h-fit bg-black  pb-16 sm:pb-10 footer-center bg-base-200  text-base-content  px-10" 
       
     >
      <motion.div
