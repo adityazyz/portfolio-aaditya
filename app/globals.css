@@ -12,3 +12,35 @@ section {
   border: none;
   background-color: inherit; /* Ensure background color is consistent */
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+.border {
+  border: 1px solid;
+}
+.border-gray-500 {
+  border-color: #6b7280; /* Adjust the color as necessary */
+}
+.rounded-xl {
+  border-radius: 1rem;
+}
+
+.bg-black {
+  background-color: black;
+}
+.bg-opacity-10 {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.backdrop-blur-lg {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
