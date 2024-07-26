@@ -32,7 +32,7 @@ const VideoBackground = ({ video, content, backupImage }: {
           style={{ backgroundImage: `url(${backupImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         ></div>
       )}
-      <div className={`absolute inset-0 bg-black ${video === "fast-video.mov" ? "opacity-60" : "opacity-20"} z-20`} ></div>
+      <div className={`absolute inset-0 bg-black ${video === "/FastVideo.mov" ? "opacity-60" : "opacity-20"} z-20`} ></div>
       <div className="relative z-30">{content}</div>
     </div>
   );

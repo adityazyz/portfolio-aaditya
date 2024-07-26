@@ -13,6 +13,7 @@
     "@hookform/resolvers": "^3.9.0",
     "@vercel/postgres": "^0.9.0",
     "clsx": "^2.1.1",
+    "file-saver": "^2.0.5",
     "framer-motion": "^11.3.2",
     "magicui-cli": "^0.1.6",
     "marquee": "^0.2.1",
@@ -27,6 +28,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@types/file-saver": "^2.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

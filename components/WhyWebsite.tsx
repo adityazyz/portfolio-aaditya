@@ -2,6 +2,7 @@ import React from "react";
 import VideoBackground from "./ui/VideoBackground";
 import { motion } from "framer-motion";
 
+
 function WhyWebsite() {
   const content = (
     <div className="relative px-4 md:px-16 z-10 flex flex-col items-center justify-center h-fit  text-center py-16 md:py-28">
@@ -61,7 +62,7 @@ function WhyWebsite() {
   );
   return (
     <div className="py-[10vh] sm:py-[20vh] bg-[#000000]">
-      <VideoBackground content={content} video={"fast-video.mov"} />
+      <VideoBackground content={content} video={"/FastVideo.mov"} />
     </div>
   );
 }

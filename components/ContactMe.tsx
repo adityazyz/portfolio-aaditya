@@ -6,7 +6,7 @@ function ContactMe() {
   const content = <ContactForm />;
   return (
     <div className=" pt-[6vh] sm:pt-[5vh] sm:py-[5vh] bg-black">
-      <VideoBackground content={content} video={"new-normal-video.mp4"} backupImage="/new-normal-photo.png"/>
+      <VideoBackground content={content} video={"/new-normal-video.mp4"} backupImage="/new-normal-photo.png"/>
     </div>
   );
 }

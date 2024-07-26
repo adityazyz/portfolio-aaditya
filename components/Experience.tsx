@@ -10,14 +10,7 @@ function Experience() {
   const isInView = useInView(ref);
 
   const myArr = [
-    {
-      link: "https://rare-consultancy.vercel.app/",
-      image: "/rare.jpeg",
-      title: "Rare Consultancy",
-      shortDescription : "A platform that connects talent with top recruiters seamlessly.",
-      description:
-        "Connect talent with top recruiters seamlessly on this innovative platform, offering personalized job matches, career advice, and a streamlined hiring process for employers and candidates alike.",
-    },
+   
     {
       link: "https://www.sakshitravels.in/",
       image: "/sakshi.jpeg",
@@ -25,6 +18,15 @@ function Experience() {
       shortDescription : "A website offering customized trips for endless destinations.",
       description:
         "Discover and book diverse tour packages effortlessly on this travel agency website, offering customized trips, seamless booking, and endless destinations for your perfect adventure.",
+    },
+
+    {
+      link: "https://rare-consultancy.vercel.app/",
+      image: "/rare.jpeg",
+      title: "Rare Consultancy",
+      shortDescription : "A platform that connects talent with top recruiters seamlessly.",
+      description:
+        "Connect talent with top recruiters seamlessly on this innovative platform, offering personalized job matches, career advice, and a streamlined hiring process for employers and candidates alike.",
     },
 
     {
