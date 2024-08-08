@@ -25,8 +25,16 @@ const pcItems1: IconData[] = [
     name: "Javascript",
   },
   {
+    image: "/wordpress.svg",
+    name: "Wordpress",
+  },
+  {
     image: "/typescript-logo.svg",
     name: "Typescript",
+  },
+  {
+    image: "/zod.svg",
+    name: "Zod",
   },
   {
     image: "/python-logo.svg",
@@ -53,6 +61,10 @@ const pcItems1: IconData[] = [
   {
     image: "/express-logo.svg",
     name: "Express",
+  },
+  {
+    image: "/prisma.svg",
+    name: "Prisma",
   },
 ];
 
