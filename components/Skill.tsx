@@ -151,7 +151,7 @@ function InfiniteMovingCardsDemo() {
         transition={{
           duration: 2,
         }}
-        className="w-full px-4 md:px-16 text-left text-white font-light tracking-wide text-[15px] md:text-lg   flex mb-12 md:mb-20 justify-center mt-12 md:mt-12  "
+        className="w-full px-6 md:px-16 text-left text-white font-light tracking-wider text-[15px] md:text-lg   flex mb-12 md:mb-20 justify-center mt-12 md:mt-12  "
       >
         {description}
       </motion.div>
