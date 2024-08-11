@@ -24,22 +24,12 @@ const pcItems1: IconData[] = [
     image: "/javascript-logo.svg",
     name: "Javascript",
   },
-  {
-    image: "/wordpress.svg",
-    name: "Wordpress",
-  },
+  
   {
     image: "/typescript-logo.svg",
     name: "Typescript",
   },
-  {
-    image: "/zod.svg",
-    name: "Zod",
-  },
-  {
-    image: "/python-logo.svg",
-    name: "Python",
-  },
+ 
 
   {
     image: "/react-logo.svg",
@@ -66,12 +56,24 @@ const pcItems1: IconData[] = [
     image: "/prisma.svg",
     name: "Prisma",
   },
+  {
+    image: "/zod.svg",
+    name: "Zod",
+  },
+  {
+    image: "/python-logo.svg",
+    name: "Python",
+  },
 ];
 
 const pcItems2 = [
   {
     image: "/framer-logo.png",
     name: "Framer",
+  },
+  {
+    image: "/wordpress.svg",
+    name: "Wordpress",
   },
   {
     image: "/bootstrap-logo.svg",
@@ -149,7 +151,7 @@ function InfiniteMovingCardsDemo() {
         transition={{
           duration: 2,
         }}
-        className="w-full px-4 md:px-16 text-left text-white font-light tracking-wide text-sm md:text-lg   flex mb-12 md:mb-20 justify-center mt-12 md:mt-12  "
+        className="w-full px-4 md:px-16 text-left text-white font-light tracking-wide text-[15px] md:text-lg   flex mb-12 md:mb-20 justify-center mt-12 md:mt-12  "
       >
         {description}
       </motion.div>

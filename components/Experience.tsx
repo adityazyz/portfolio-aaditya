@@ -2,12 +2,9 @@
 import React from "react";
 import { GlareCard } from "./ui/GlareCard";
 import Link from "next/link";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 
 function Experience() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
 
   const myArr = [
    
@@ -75,7 +72,7 @@ function Experience() {
           transition={{
             duration: 2.5,
           }}
-          className="w-full px-4 md:px-16 text-center text-white font-light tracking-wide text-sm md:text-lg flex mb-10 sm:pb-24 justify-center mt-12 md:mt-24 "
+          className="w-full px-4 md:px-16 text-center text-white font-light tracking-wide text-[15px] md:text-lg flex mb-10 sm:pb-24 justify-center mt-12 md:mt-24 "
         >
           {descriptionTop}
         </motion.div>
@@ -132,7 +129,7 @@ function Experience() {
           transition={{
             duration: 2,
           }}
-          className="w-full px-4 md:px-16 text-center text-white font-light tracking-wide  text-sm md:text-lg flex mb-16 justify-center mt-4 md:mt-20 "
+          className="w-full px-4 md:px-16 text-center text-white font-light tracking-wide  text-[15px] md:text-lg flex mb-16 justify-center mt-4 md:mt-20 "
         >
           {descriptionBottom}
         </motion.div>
