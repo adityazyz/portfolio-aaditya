@@ -25,7 +25,7 @@ interface SocialData {
   link: string;
 }
 
-const resumeFileName = "AadityaDagar-RESUME.pdf";
+const resumeFileName = "resume-aaditya-dagar.pdf";
 
 function Hero({ handleAboutScroll, handleContactScroll }: MyComponentProps) {
 

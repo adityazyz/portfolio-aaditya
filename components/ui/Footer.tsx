@@ -10,7 +10,7 @@ import { MdOutlineMarkEmailUnread } from "react-icons/md";
 
 function Footer({ NavItems }: { NavItems: INavItems[] }) {
   const MobileNumber = "+91 844 833 5264";
-  const Email = "tuskersadi@gmail.com";
+  const Email = "aadityadagr@gmail.com";
   const iconClass =
     "h-6 w-6 md:h-7 ml-2 md:w-7 mr-5 text-gray-200 hover:text-white hover:scale-110 transition-all duration-200 ease-in-out text-sm md:text-lg";
 

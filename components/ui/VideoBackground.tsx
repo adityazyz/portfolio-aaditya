@@ -16,7 +16,7 @@ const VideoBackground = ({ video, content, backupImage }: {
     <div className="relative h-full w-full">
       {!videoError ? (
         <video
-          autoPlay = {true}
+          autoPlay
           loop
           muted
           playsInline
